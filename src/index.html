@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabular Data UI</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../dist/css/tailwind.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body class="font-open-sans bg-slate-900">
+    <!-- search -->
+    <div class="flex items-center gap-3 ps-7 border-b border-gray-800">
+      <!-- icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        class="text-gray-500"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"
+        />
+      </svg>
+      <!-- input -->
+      <input
+        type="text"
+        class="w-full bg-slate-900 text-white text-sm placeholder:text-gray-500 placeholder:text-sm py-6 outline-0"
+        placeholder="Search..."
+      />
+    </div>
+  </body>
+</html>
