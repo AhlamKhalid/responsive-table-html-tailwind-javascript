@@ -1,6 +1,7 @@
 // DOM elements //
 // table body
 const tableBody = document.getElementById("table-body");
+const searchInput = document.getElementById("search-input");
 
 // get users through dummyJSON API
 const getUsers = () => {
@@ -14,6 +15,13 @@ const getUsers = () => {
 
 // insert users in DOM
 const displayUsers = (users) => {
+  // reset table data
+  tableBody.innerHTML = "";
+
+  // if no search results
+  showNoResults(users);
+
+  // users HTML
   users.forEach((user, index) => {
     tableBody.innerHTML += `
         <!-- don't add border bottom for last row -->
@@ -78,5 +86,33 @@ const displayUsers = (users) => {
   });
 };
 
+// show no results message
+const showNoResults = (users) => {
+  if (users.length === 0) {
+    tableBody.innerHTML += `<tr>
+                              <td colspan="5" class="px-7 py-5 text-gray-500 text-sm">
+                                No results
+                              </td>
+                            </tr>
+                            `;
+  }
+};
+
+// event handler for search
+const searchHandler = (event) => {
+  const eventTarget = event.target;
+  const searchTerm = eventTarget.value;
+
+  fetch(`https://dummyjson.com/users/search?q=${searchTerm}`)
+    .then((response) => response.json())
+    .then((data) => {
+      const users = data.users;
+      displayUsers(users);
+    });
+};
+
 // start with getting users
 getUsers();
+
+// add event listener for search input
+searchInput.addEventListener("input", searchHandler);
