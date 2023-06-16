@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabular Data UI</title>
+    <title>Responsive Table UI</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,12 +14,10 @@
     />
     <!-- tailwind -->
     <link rel="stylesheet" href="../dist/css/tailwind.css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="./css/custom.css" />
   </head>
-  <body class="font-open-sans bg-slate-900">
-    <!-- search -->
-    <div class="flex items-center gap-3 ps-7 border-b border-gray-800">
+  <body class="font-open-sans bg-slate-950">
+    <!-- BEGIN::search -->
+    <div class="flex items-center gap-3 px-7 border-b border-gray-900">
       <!-- icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +38,320 @@
       <!-- input -->
       <input
         type="text"
-        class="w-full bg-slate-900 text-white text-sm placeholder:text-gray-500 placeholder:text-sm py-6 outline-0"
+        class="w-full bg-slate-950 text-white text-sm placeholder:text-gray-500 placeholder:text-sm py-6 outline-0"
         placeholder="Search..."
       />
     </div>
+    <!-- END::search -->
+    <!-- BEGIN::table -->
+    <div class="overflow-x-auto">
+      <table class="w-full">
+        <thead class="border-b border-gray-900">
+          <tr>
+            <th
+              class="text-start text-white font-semibold text-sm uppercase px-7 py-3"
+            >
+              User
+            </th>
+            <th
+              class="text-start text-white font-semibold text-sm uppercase px-7 py-3"
+            >
+              Title
+            </th>
+            <th
+              class="text-start text-white font-semibold text-sm uppercase px-7 py-3"
+            >
+              Department
+            </th>
+            <th
+              class="text-start text-white font-semibold text-sm uppercase px-7 py-3"
+            >
+              Gender
+            </th>
+            <!-- actions -->
+            <th class="px-7 py-3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-900">
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-1.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-green-400 inline-block ring-4 ring-green-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Female</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-900">
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-2.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Male</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-900">
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-3.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Male</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-900">
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-1.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-green-400 inline-block ring-4 ring-green-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Female</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-gray-900">
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-2.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Male</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+            >
+              <img
+                src="../dist/img/avatar-3.jpeg"
+                class="w-11 h-11 rounded-full object-cover shrink-0"
+              />
+              <div>
+                <p class="text-white text-sm capitalize">Neil sims</p>
+                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
+              </div>
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Help desk operator
+            </td>
+            <td
+              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
+            >
+              Marketing
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <span class="flex items-center gap-2">
+                <span
+                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
+                ></span>
+                <span class="text-sm text-white">Male</span>
+              </span>
+            </td>
+            <td class="px-7 py-5 whitespace-nowrap">
+              <div class="flex items-center justify-end gap-4">
+                <button
+                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
+                >
+                  Update
+                </button>
+                <button
+                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
+                >
+                  Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END::table -->
   </body>
 </html>
