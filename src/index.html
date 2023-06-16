@@ -72,14 +72,14 @@
             <th class="px-7 py-3"></th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="border-b border-gray-900">
+        <tbody id="table-body">
+          <!-- <tr class="border-b border-gray-900">
             <td
               class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
             >
               <img
                 src="../dist/img/avatar-1.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
+                class="w-11 h-11 rounded-full object-cover shrink-0 bg-slate-900"
               />
               <div>
                 <p class="text-white text-sm capitalize">Neil sims</p>
@@ -101,7 +101,7 @@
                 <span
                   class="w-3.5 h-3.5 rounded-full bg-green-400 inline-block ring-4 ring-green-950 ring-inset"
                 ></span>
-                <span class="text-sm text-white">Female</span>
+                <span class="text-sm text-white capitalize">Female</span>
               </span>
             </td>
             <td class="px-7 py-5 whitespace-nowrap">
@@ -125,7 +125,7 @@
             >
               <img
                 src="../dist/img/avatar-2.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
+                class="w-11 h-11 rounded-full object-cover shrink-0 bg-slate-900"
               />
               <div>
                 <p class="text-white text-sm capitalize">Neil sims</p>
@@ -147,145 +147,7 @@
                 <span
                   class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
                 ></span>
-                <span class="text-sm text-white">Male</span>
-              </span>
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <div class="flex items-center justify-end gap-4">
-                <button
-                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
-                >
-                  Update
-                </button>
-                <button
-                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
-                >
-                  Delete
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-900">
-            <td
-              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
-            >
-              <img
-                src="../dist/img/avatar-3.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
-              />
-              <div>
-                <p class="text-white text-sm capitalize">Neil sims</p>
-                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
-              </div>
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Help desk operator
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Marketing
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <span class="flex items-center gap-2">
-                <span
-                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
-                ></span>
-                <span class="text-sm text-white">Male</span>
-              </span>
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <div class="flex items-center justify-end gap-4">
-                <button
-                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
-                >
-                  Update
-                </button>
-                <button
-                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
-                >
-                  Delete
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-900">
-            <td
-              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
-            >
-              <img
-                src="../dist/img/avatar-1.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
-              />
-              <div>
-                <p class="text-white text-sm capitalize">Neil sims</p>
-                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
-              </div>
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Help desk operator
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Marketing
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <span class="flex items-center gap-2">
-                <span
-                  class="w-3.5 h-3.5 rounded-full bg-green-400 inline-block ring-4 ring-green-950 ring-inset"
-                ></span>
-                <span class="text-sm text-white">Female</span>
-              </span>
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <div class="flex items-center justify-end gap-4">
-                <button
-                  class="text-sm text-indigo-400 hover:text-indigo-300 font-semibold"
-                >
-                  Update
-                </button>
-                <button
-                  class="text-sm text-red-400 hover:text-red-300 font-semibold"
-                >
-                  Delete
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-gray-900">
-            <td
-              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
-            >
-              <img
-                src="../dist/img/avatar-2.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
-              />
-              <div>
-                <p class="text-white text-sm capitalize">Neil sims</p>
-                <p class="text-gray-500 mt-1 text-sm">neil.sims@flowbite.com</p>
-              </div>
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Help desk operator
-            </td>
-            <td
-              class="px-7 py-5 text-white capitalize text-sm whitespace-nowrap"
-            >
-              Marketing
-            </td>
-            <td class="px-7 py-5 whitespace-nowrap">
-              <span class="flex items-center gap-2">
-                <span
-                  class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
-                ></span>
-                <span class="text-sm text-white">Male</span>
+                <span class="text-sm text-white capitalize">Male</span>
               </span>
             </td>
             <td class="px-7 py-5 whitespace-nowrap">
@@ -309,7 +171,7 @@
             >
               <img
                 src="../dist/img/avatar-3.jpeg"
-                class="w-11 h-11 rounded-full object-cover shrink-0"
+                class="w-11 h-11 rounded-full object-cover shrink-0 bg-slate-900"
               />
               <div>
                 <p class="text-white text-sm capitalize">Neil sims</p>
@@ -331,7 +193,7 @@
                 <span
                   class="w-3.5 h-3.5 rounded-full bg-blue-400 inline-block ring-4 ring-blue-950 ring-inset"
                 ></span>
-                <span class="text-sm text-white">Male</span>
+                <span class="text-sm text-white capitalize">Male</span>
               </span>
             </td>
             <td class="px-7 py-5 whitespace-nowrap">
@@ -348,10 +210,12 @@
                 </button>
               </div>
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>
     <!-- END::table -->
+    <!-- javascript -->
+    <script src="../dist/js/main.js"></script>
   </body>
 </html>
