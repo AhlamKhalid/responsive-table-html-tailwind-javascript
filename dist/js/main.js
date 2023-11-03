@@ -25,8 +25,8 @@ const displayUsers = (users) => {
   } else {
     // users HTML
     users.forEach((user, index) => {
+      // don't add border bottom for last row: index !== users.length - 1
       tableBody.innerHTML += `
-        <!-- don't add border bottom for last row -->
         <tr class="${
           index !== users.length - 1 ? "border-b border-gray-900" : ""
         }">
