@@ -31,7 +31,7 @@ const displayUsers = (users) => {
           index !== users.length - 1 ? "border-b border-gray-900" : ""
         }">
             <td
-              class="flex items-center gap-3 ps-7 pe-12 py-5 whitespace-nowrap"
+              class="flex items-center gap-3 px-7 py-5 whitespace-nowrap min-w-[320px]"
             >
               <img
                 src=${user.image}
@@ -60,8 +60,8 @@ const displayUsers = (users) => {
                 <span
                   class="w-3.5 h-3.5 rounded-full inline-block ring-4 ring-inset ${
                     user.gender === "male"
-                      ? "bg-blue-400 ring-blue-950"
-                      : "bg-green-400 ring-green-950"
+                      ? "ring-blue-950 bg-blue-400"
+                      : "ring-green-950 bg-green-400"
                   }"
                 ></span>
                 <span class="text-sm text-white capitalize">${

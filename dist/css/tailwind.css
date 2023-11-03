@@ -566,6 +566,10 @@ video {
   width: 100%;
 }
 
+.min-w-\[320px\] {
+  min-width: 320px;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
