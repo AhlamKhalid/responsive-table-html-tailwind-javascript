@@ -538,14 +538,6 @@ video {
   display: table;
 }
 
-.table-row {
-  display: table-row;
-}
-
-.hidden {
-  display: none;
-}
-
 .h-11 {
   height: 2.75rem;
 }

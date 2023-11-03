@@ -1,6 +1,7 @@
 // DOM elements //
 // table body
 const tableBody = document.getElementById("table-body");
+// search input
 const searchInput = document.getElementById("search-input");
 
 // get users through dummyJSON API
@@ -19,11 +20,12 @@ const displayUsers = (users) => {
   tableBody.innerHTML = "";
 
   // if no search results
-  showNoResults(users);
-
-  // users HTML
-  users.forEach((user, index) => {
-    tableBody.innerHTML += `
+  if (users.length === 0) {
+    showNoResults();
+  } else {
+    // users HTML
+    users.forEach((user, index) => {
+      tableBody.innerHTML += `
         <!-- don't add border bottom for last row -->
         <tr class="${
           index !== users.length - 1 ? "border-b border-gray-900" : ""
@@ -37,8 +39,8 @@ const displayUsers = (users) => {
               />
               <div>
                 <p class="text-white text-sm capitalize">${user.firstName} ${
-      user.lastName
-    }</p>
+        user.lastName
+      }</p>
                 <p class="text-gray-500 mt-1 text-sm">${user.email}</p>
               </div>
             </td>
@@ -83,19 +85,18 @@ const displayUsers = (users) => {
             </td>
           </tr>
         `;
-  });
+    });
+  }
 };
 
 // show no results message
-const showNoResults = (users) => {
-  if (users.length === 0) {
-    tableBody.innerHTML += `<tr>
+const showNoResults = () => {
+  tableBody.innerHTML += `<tr>
                               <td colspan="5" class="px-7 py-5 text-gray-500 text-sm">
                                 No results
                               </td>
                             </tr>
                             `;
-  }
 };
 
 // event handler for search
