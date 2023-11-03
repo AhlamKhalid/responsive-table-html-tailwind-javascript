@@ -664,16 +664,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pe-12 {
-  -webkit-padding-end: 3rem;
-          padding-inline-end: 3rem;
-}
-
-.ps-7 {
-  -webkit-padding-start: 1.75rem;
-          padding-inline-start: 1.75rem;
-}
-
 .text-start {
   text-align: start;
 }
