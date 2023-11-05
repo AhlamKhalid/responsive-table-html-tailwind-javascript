@@ -574,6 +574,10 @@ video {
   flex-shrink: 0;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .items-center {
   align-items: center;
 }
